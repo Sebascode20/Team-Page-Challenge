@@ -1,0 +1,286 @@
+:root {
+  --font-title: 'PT Serif', serif;
+  --font-paragraph: 'Poppins', sans-serif;
+  --font-footer: 'Montserrat', sans-serif;
+  --font-color-footer: #A9A9A9;
+}
+
+/* ********** Reset ********** */
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+  position: relative;
+  font-family: var(--font-title);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ********** mobile design ********** */
+.container {
+  max-width: 1260px;
+  min-width: 320px;
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+header>h1 {
+  margin: 3rem 1rem 2rem 1rem;
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 36px;
+}
+
+h2,
+p {
+  margin-left: 1rem;
+}
+
+h2 {
+  font-family: var(--font-paragraph);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+p {
+  margin-bottom: 3rem;
+  font-family: var(--font-paragraph);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.left-image img {
+  width: 156px;
+}
+
+.right-image img {
+  width: 157px;
+}
+
+.left-image {
+  margin: 1rem 0 5rem 1rem;
+  width: 100px;
+}
+
+.right-image {
+  margin-left: 1rem;
+  float: right;
+  width: 100px;
+  clear: both;
+  align-self: center;
+}
+
+figure>p {
+  margin-left: -1.4rem;
+  margin-top: -3.2rem;
+  font-family: var(--font-title);
+  font-size: 10px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  width: 260px;
+}
+
+figure>figcaption {
+  font-family: var(--font-paragraph);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-family: var(--font-footer);
+  font-size: 12px;
+  text-align: center;
+  color: var(--font-color-footer);
+}
+
+/* ********** tablet design ********** */
+@media screen and (min-width: 37.5em) {
+  .container {
+    align-items: inherit;
+  }
+
+  .container-images {
+    margin-bottom: 2rem;
+  }
+
+  header>h1 {
+    margin: 3rem 1rem 2rem 3rem;
+  }
+
+  h2,
+  p {
+    margin-left: 3rem;
+  }
+
+  .left-image {
+    width: 162px;
+    margin-left: 3rem;
+  }
+
+  .right-image {
+    margin-left: 1rem;
+    width: 161px;
+  }
+
+  figure>p {
+    margin-left: 2.2rem;
+    margin-top: -8.6rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .container {
+    min-height: 90vh;
+    align-items: inherit;
+  }
+
+  .container-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 1rem;
+    padding-bottom: 12rem;
+  }
+
+  header>h1 {
+    width: 278px;
+    font-size: 33px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -5rem;
+  }
+
+  h2 {
+    margin-left: 11.1rem;
+    align-self: center;
+  }
+
+  p {
+    margin-left: 23rem;
+    margin-top: 0;
+    width: 300px;
+    line-height: 27px;
+  }
+
+  .left-image {
+    margin: 1rem 0 5rem 0;
+    align-self: auto;
+    justify-self: center;
+  }
+
+  .right-image {
+    margin: 1rem 0 5rem 0;
+    align-self: auto;
+    justify-self: center;
+  }
+
+  .left-image>img[alt="developer's photo"] {
+    margin-top: 3rem;
+  }
+
+  .left-image>img[alt="art director's photo"] {
+    margin: 3rem;
+  }
+
+  .saba {
+    align-self: flex-end;
+  }
+
+  footer {
+    margin-bottom: 1rem;
+  }
+
+  figure>figcaption {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .container-images {
+    margin: 0 1rem;
+    padding: 0 4rem 12rem 4rem;
+  }
+
+  header>h1 {
+    margin-left: 11rem;
+  }
+
+  h2 {
+    margin-left: 8rem;
+  }
+
+  p {
+    margin-left: 20rem;
+  }
+
+  .left-image {
+    margin-left: 8rem;
+    align-self: flex-end;
+  }
+
+  .left-image img {
+    width: 264px;
+  }
+
+  .right-image img {
+    width: 238px;
+  }
+
+  figure>p {
+    margin-top: -8.9rem;
+    margin-left: 2.9rem;
+    font-size: 12px;
+  }
+
+  .left-image {
+    margin: 1rem 0 5rem 0;
+    align-self: auto;
+    justify-self: center;
+  }
+
+  .right-image {
+    margin: 1rem 0 5rem 0;
+    align-self: auto;
+    justify-self: center;
+  }
+
+  .saba {
+    align-self: flex-end;
+  }
+
+  figure>figcaption {
+    font-size: 18px;
+  }
+}
