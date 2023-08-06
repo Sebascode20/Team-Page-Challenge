@@ -40,7 +40,7 @@
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo? You can see my demo in https://github.com/Sebascode20/Team-Page-Challenge
+- Where can I see your demo? You can see my demo in https://employees-page.netlify.app/
 - What was your experience? I had a lot of fun as I can apply all my knowledge in HTML and CSS.
 - What have you learned/improved? I learned how to layout with grid css.
 - Your wisdom? :)
